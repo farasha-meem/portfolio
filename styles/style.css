@@ -1,0 +1,173 @@
+#welcome-section {
+    background-color: grey;
+    height: 90vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+  }
+
+  h1 {
+    font-size: 100px;
+    color: darkred;
+    -webkit-text-stroke: 2px black;
+  }
+
+  navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; 
+    top: 0;
+    width: 101%; 
+    margin-left: -10px;
+    z-index: 5;
+  }
+  
+  navbar a {
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    position: relative;
+  }
+
+  navbar a img {
+    width: 25px;
+  }
+
+#resume-tooltip, #github-tooltip, #email-tooltip {
+    visibility: hidden;
+    width: 120px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+    right: 50px;
+    z-index: 5;
+  }
+
+  
+  #resume:hover #resume-tooltip, #profile-link:hover #github-tooltip, #email:hover #email-tooltip {
+    visibility: visible;
+  }
+  
+  @media screen and (max-width: 600px) {
+    navbar {
+      height: 100%; /* 100% Full-height */
+      width: 80px; /* 0 width - change this with JavaScript */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Stay on top */
+      top: 0; /* Stay at the top */
+      left: 0;
+    }
+    main {
+        margin-left: 80px;
+        margin-top: 0px !important;
+    }
+    footer {
+        margin-left: 80px;
+    }
+    #resume-tooltip, #github-tooltip, #email-tooltip {
+      right: 0px;
+      left: 50px;
+    }
+  }
+  
+  main {
+    margin-top: 50px;
+  }
+
+  section ul li {
+    list-style: none;
+    padding: 100px;
+    display: inline-block;
+    margin: 5px;
+    font-size: large;
+    font-weight: bold;
+    vertical-align: top;
+    background-color: darkgrey;
+    text-align: center;
+    color: darkred;
+    border: solid black;
+  }
+
+  .project-tile a, .project-tile a:active, .project-tile a:enabled, .project-tile a:focus, .project-tile a:visited {
+    text-decoration: none !important;
+    color: darkred !important;
+  }
+
+  section ul {
+    display: flex;
+    padding-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section {
+    background-color: grey;
+    padding: 10px;
+    border: solid black;
+    margin-top: 10px;
+}
+
+header{
+  width: 99%;
+  text-align: center;
+  background-color: darkred;
+  padding: 5px;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+body {
+  background-color: darkgrey;
+}
+
+#sports-overlay, #music-overlay, #astro-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color:grey;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: white;
+}
+
+#sports-container:hover #sports-overlay, #music-container:hover #music-overlay, #astro-container:hover #astro-overlay {
+  height: 100%;
+}
+
+#sports-container, #music-container, #astro-container {
+  position: relative;
+  width: 150px;
+  height: 100px;
+
+}
+
+#sports, #music, #astro {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+#sports-overlay {
+  background-image: url("/media/sports.jpeg");
+}
+
+#music-overlay {
+  background-image: url("/media/music.jpeg");
+}
+
+#astro-overlay {
+  background-image: url("/media/astro.jpeg");
+}
