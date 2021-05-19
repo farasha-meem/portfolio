@@ -187,13 +187,13 @@ body {
 }
 
 #sports-container {
-  background-image: url("/media/sports.jpeg");
+  background-image: url("/portfolio/media/sports.jpeg");
 }
 
 #music-container {
-  background-image: url("/media/music.jpeg");
+  background-image: url("/portfolio/media/music.jpeg");
 }
 
 #astro-container {
-  background-image: url("/media/astro.jpeg");
+  background-image: url("/portfolio/media/astro.jpeg");
 }
