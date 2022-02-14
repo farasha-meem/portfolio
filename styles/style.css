@@ -12,6 +12,7 @@
     font-size: 100px;
     color: #2196f3;
     text-shadow: 2px 2px dimgrey;
+    margin-bottom: 0px;
   }
 
   navbar {
@@ -201,4 +202,18 @@ body {
 
 #astro-container {
   background-image: url("/portfolio/media/astro.jpeg");
+}
+
+
+#nav-bar button {
+  float: left;
+  display: block;
+  color: rgb(228, 197, 22);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: black;
+  cursor: pointer;
+  margin-right: 10px;
+  border-color: rgb(228, 197, 22);
 }

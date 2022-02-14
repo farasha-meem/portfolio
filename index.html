@@ -2,9 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles/style.css">
+        <script src="scripts/script.js"></script>
     </head>
     <body>
         <navbar id="navbar"> 
+          <!--<button onclick="showSection(this)">ME</button>
+          <button onclick="showSection(this)">MY PROJECTS</button>
+          <button onclick="showSection(this)">MY RESUME</button>-->
             <a id="resume" href="/media/Meem_CV.pdf" download> <!--Clicking link opens browser to download my resume.--> 
               <img src="media/outline_article_white_24dp.png">
               <span id="resume-tooltip"> Download My Resume </span> 
@@ -20,42 +24,14 @@
         </navbar>
         
         <main>
-        <section id="welcome-section"> <h1> Farasha Rahman Meem </h1> </section>
-        
-        <section id="projects">
-        <header> PROJECTS </header>
-          <h2> Machine Learning: </h2>
-          <ul> 
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/amazon-music-reviews-prediction"> Amazon Music Reviews Prediction  </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/ML-Exoplanet-Detection"> Exoplanet Detection with Machine Learning </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/COVID19_Time_Series_Prediction"> Time Series Prediction of COVID-19 Cases </a> 
-            </li>
-          </ul>
-          <h2> Web Development: </h2>
-          <ul> 
-            <li class="project-tile"> 
-              <a href="https://farasha-meem.github.io/google-homepage/"> Google Homepage </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/survey-form"> Website Survey Form </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/technical-documentation-page"> GitHub Workflow Technical Documentation </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/product-page"> Guitar Selling Product Page </a> 
-            </li>
-            <li class="project-tile"> 
-              <a href="https://github.com/farasha-meem/tribute-page"> Maradona Tribute Page </a> 
-            </li>
-          </ul>
+        <section id="welcome-section"> <h1> Farasha Rahman Meem </h1> 
+          <br> 
+          <p style="
+          font-size: larger;
+          color: darkblue;
+      "> A<span class="txt-rotate" data-period="2000" data-rotate='[ "n MEng graduate.", " Physics and Astrophysics graduate.", "n Economics minor graduate.", " web developer.", "n athlete.", " musician.", "n astrophotographer", "n avid learner.", " a fun new friend!" ]'></span></p> 
         </section>
-
+        
         <section id="hobbies">
           <header> HOBBIES & INTERESTS </header>
           <ul>
@@ -79,6 +55,41 @@
             </li>
           </ul>
         </section>
+
+        <section id="projects">
+          <header> PROJECTS </header>
+            <h2> Machine Learning: </h2>
+            <ul> 
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://github.com/farasha-meem/amazon-music-reviews-prediction"> Amazon Music Reviews Prediction  </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://github.com/farasha-meem/ML-Exoplanet-Detection"> Exoplanet Detection with Machine Learning </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://github.com/farasha-meem/COVID19_Time_Series_Prediction"> Time Series Prediction of COVID-19 Cases </a> 
+              </li>
+            </ul>
+            <h2> Web Development: </h2>
+            <ul> 
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://farasha-meem.github.io/google-homepage/"> Google Homepage </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://github.com/farasha-meem/survey-form"> Website Survey Form </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://github.com/farasha-meem/technical-documentation-page"> GitHub Workflow Technical Documentation </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://farasha-meem.github.io/product-page/"> Guitar Selling Product Page </a> 
+              </li>
+              <li class="project-tile"> 
+                <a target=”_blank” href="https://farasha-meem.github.io/tribute-page/"> Maradona Tribute Page </a> 
+              </li>
+            </ul>
+          </section>
+  
           
         </main>
     </body>
